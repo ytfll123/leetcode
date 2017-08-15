@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    function removeDuplicates(nums) {
+    nums.forEach(function (value,index) {
+      for (let i = index+1; i < nums.length; i++) {
+        if(value == nums[i]){
+          nums.splice(i,1)
+          i--;
+        }
+      }
+    })
+    return nums.length
+  };
+    </script>
+  </body>
+</html>
